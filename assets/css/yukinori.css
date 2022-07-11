@@ -1,7 +1,10 @@
 @media screen and (max-width: 767px) {
   header {
-    position: relative;
+    position: fixed;
     overflow: hidden;
+    width: 100%;
+    top: 95px;
+    z-index: 1;
   }
 }
 
@@ -15,11 +18,14 @@ header ul {
     display: block;
     text-align: center;
     background-color: rgba(215, 214, 214, 0.415);
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 132px;
-    left: 352px;
+    left: 371px;
     z-index: 1;
+    transition: all 1s ease;
+  }
+  header ul.hide {
+    left: 0;
   }
 }
 
@@ -55,13 +61,14 @@ header li {
 @media screen and (max-width: 767px) {
   #kv #logo {
     position: static;
+    z-index: -1;
   }
 }
 
 @media screen and (max-width: 767px) {
   #kv #logo img {
     width: 30%;
-    padding: 20px 0;
+    padding: 40px 0 40px;
   }
 }
 
@@ -78,7 +85,7 @@ header li {
 
 @media screen and (max-width: 767px) {
   #kv #visual-text {
-    top: 165px;
+    top: 210px;
     right: 91px;
     left: 20px;
   }

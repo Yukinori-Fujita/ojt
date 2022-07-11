@@ -8,24 +8,32 @@
 // header
 header {
 
-    @include sp-screen{
-        position: relative;
+    @include sp-screen {
+        position: fixed;
         overflow: hidden;
+        width: 100%;
+        top: 95px;
+        z-index: 1;
     }
 
     ul {
         display: flex;
         justify-content: end;
 
-        @include sp-screen{
+        @include sp-screen {
             display: block;
             text-align: center;
             background-color: rgba(215, 214, 214, 0.415);
-            position: absolute;
+            position: relative;
             width: 100%;
-            top: 132px;
-            left: 352px;
+            left: 371px;
             z-index: 1;
+
+            &.hide {
+                left: 0;
+            }
+
+            transition: all 1s ease;
         }
     }
 
@@ -33,7 +41,7 @@ header {
         font-size: 20px;
         padding: 50px 70px 50px 15px;
 
-        @include sp-screen{
+        @include sp-screen {
             padding: 20px 0 20px 0;
         }
     }
@@ -45,7 +53,7 @@ header {
     margin: 0 auto;
     position: relative;
 
-    @include sp-screen{
+    @include sp-screen {
         width: 100%;
         text-align: center;
     }
@@ -54,14 +62,15 @@ header {
         position: absolute;
         top: -115px;
 
-        @include sp-screen{
+        @include sp-screen {
             position: static;
+            z-index: -1;
         }
 
-        img{
-            @include sp-screen{
+        img {
+            @include sp-screen {
                 width: 30%;
-                padding: 20px 0;
+                padding: 40px 0 40px;
             }
         }
     }
@@ -76,8 +85,8 @@ header {
         top: 235px;
         right: 0px;
 
-        @include sp-screen{
-            top: 165px;
+        @include sp-screen {
+            top: 210px;
             right: 91px;
             left: 20px;
         }
@@ -87,14 +96,14 @@ header {
         padding: 10px 0;
         font-size: 23px;
 
-        @include sp-screen{
+        @include sp-screen {
             font-size: 18px;
         }
 
-        .br-sp{
+        .br-sp {
             display: none;
 
-            @include sp-screen{
+            @include sp-screen {
                 display: block;
             }
         }
