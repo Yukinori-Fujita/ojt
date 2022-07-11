@@ -56,8 +56,9 @@ header {
         right: 0px;
 
         @include sp-screen{
-            top: 267px;
+            top: 165px;
             right: 91px;
+            left: 20px;
         }
     }
 

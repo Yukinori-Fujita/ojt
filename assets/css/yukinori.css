@@ -52,8 +52,9 @@ header li {
 
 @media screen and (max-width: 767px) {
   #kv #visual-text {
-    top: 267px;
+    top: 165px;
     right: 91px;
+    left: 20px;
   }
 }
 
