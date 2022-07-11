@@ -1,11 +1,37 @@
+@media screen and (max-width: 767px) {
+  header {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
 header ul {
   display: flex;
   justify-content: end;
 }
 
+@media screen and (max-width: 767px) {
+  header ul {
+    display: block;
+    text-align: center;
+    background-color: rgba(215, 214, 214, 0.415);
+    position: absolute;
+    width: 100%;
+    top: 132px;
+    left: 352px;
+    z-index: 1;
+  }
+}
+
 header li {
   font-size: 20px;
   padding: 50px 70px 50px 15px;
+}
+
+@media screen and (max-width: 767px) {
+  header li {
+    padding: 20px 0 20px 0;
+  }
 }
 
 #kv {
@@ -35,7 +61,7 @@ header li {
 @media screen and (max-width: 767px) {
   #kv #logo img {
     width: 30%;
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
 }
 

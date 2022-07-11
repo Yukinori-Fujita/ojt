@@ -7,14 +7,35 @@
 
 // header
 header {
+
+    @include sp-screen{
+        position: relative;
+        overflow: hidden;
+    }
+
     ul {
         display: flex;
         justify-content: end;
+
+        @include sp-screen{
+            display: block;
+            text-align: center;
+            background-color: rgba(215, 214, 214, 0.415);
+            position: absolute;
+            width: 100%;
+            top: 132px;
+            left: 352px;
+            z-index: 1;
+        }
     }
 
     li {
         font-size: 20px;
         padding: 50px 70px 50px 15px;
+
+        @include sp-screen{
+            padding: 20px 0 20px 0;
+        }
     }
 }
 
@@ -40,7 +61,7 @@ header {
         img{
             @include sp-screen{
                 width: 30%;
-                padding-bottom: 20px;
+                padding: 20px 0;
             }
         }
     }
