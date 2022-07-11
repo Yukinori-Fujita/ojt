@@ -23,9 +23,10 @@ header {
         @include sp-screen {
             display: block;
             text-align: center;
-            background-color: rgba(215, 214, 214, 0.415);
+            background-color: #fffffff0;
             position: relative;
             width: 100%;
+            height: 100vh;
             left: 371px;
             z-index: 1;
 
@@ -42,7 +43,8 @@ header {
         padding: 50px 70px 50px 15px;
 
         @include sp-screen {
-            padding: 20px 0 20px 0;
+            padding: 40px 0 0 0;
+            font-weight: bold;
         }
     }
 }
