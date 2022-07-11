@@ -40,6 +40,7 @@ header {
         img{
             @include sp-screen{
                 width: 30%;
+                padding-bottom: 20px;
             }
         }
     }
@@ -66,6 +67,14 @@ header {
 
         @include sp-screen{
             font-size: 18px;
+        }
+
+        .br-sp{
+            display: none;
+
+            @include sp-screen{
+                display: block;
+            }
         }
     }
 }
