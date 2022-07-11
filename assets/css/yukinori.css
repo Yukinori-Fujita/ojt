@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=yukinori.css.map */
+header ul {
+  display: flex;
+  justify-content: end;
+}
+
+header li {
+  padding: 40px 20px;
+}
+/*# sourceMappingURL=yukinori.css.map */
