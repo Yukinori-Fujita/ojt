@@ -1,3 +1,10 @@
+// レスポンシブ
+@mixin sp-screen {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
 // header
 header {
     ul {
@@ -6,7 +13,8 @@ header {
     }
 
     li {
-        padding: 50px 20px 50px 50px;
+        font-size: 20px;
+        padding: 50px 70px 50px 15px;
     }
 }
 
@@ -16,9 +24,24 @@ header {
     margin: 0 auto;
     position: relative;
 
+    @include sp-screen{
+        width: 100%;
+        text-align: center;
+    }
+
     #logo {
         position: absolute;
         top: -115px;
+
+        @include sp-screen{
+            position: static;
+        }
+
+        img{
+            @include sp-screen{
+                width: 30%;
+            }
+        }
     }
 
     #main-visual {
@@ -30,11 +53,20 @@ header {
         position: absolute;
         top: 235px;
         right: 0px;
+
+        @include sp-screen{
+            top: 267px;
+            right: 91px;
+        }
     }
 
-    p{
+    p {
         padding: 10px 0;
         font-size: 23px;
+
+        @include sp-screen{
+            font-size: 18px;
+        }
     }
 }
 

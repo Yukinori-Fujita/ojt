@@ -4,7 +4,8 @@ header ul {
 }
 
 header li {
-  padding: 50px 20px 50px 50px;
+  font-size: 20px;
+  padding: 50px 70px 50px 15px;
 }
 
 #kv {
@@ -13,9 +14,28 @@ header li {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  #kv {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 #kv #logo {
   position: absolute;
   top: -115px;
+}
+
+@media screen and (max-width: 767px) {
+  #kv #logo {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #kv #logo img {
+    width: 30%;
+  }
 }
 
 #kv #main-visual {
@@ -29,9 +49,22 @@ header li {
   right: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  #kv #visual-text {
+    top: 267px;
+    right: 91px;
+  }
+}
+
 #kv p {
   padding: 10px 0;
   font-size: 23px;
+}
+
+@media screen and (max-width: 767px) {
+  #kv p {
+    font-size: 18px;
+  }
 }
 
 footer {
