@@ -1,32 +1,46 @@
-header{
-    ul{
+// header
+header {
+    ul {
         display: flex;
         justify-content: end;
     }
 
-    li{
+    li {
         padding: 50px 20px 50px 50px;
     }
 }
 
-#kv{
+// kv
+#kv {
     width: 1152px;
     margin: 0 auto;
     position: relative;
 
-    #logo{
+    #logo {
         position: absolute;
         top: -115px;
     }
 
-    #main-visual{
+    #main-visual {
         display: flex;
         justify-content: center;
     }
 
-    #visual-text{
+    #visual-text {
         position: absolute;
         top: 235px;
         right: 0px;
+    }
+}
+
+// footer
+footer {
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+
+    span {
+        color: white;
+        font-size: 15px;
     }
 }
