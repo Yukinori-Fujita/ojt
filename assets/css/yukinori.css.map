@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AACI,MADE,CACF,EAAE,CAAA;EACE,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,GAAG;CACvB;;AAJL,AAMI,MANE,CAMF,EAAE,CAAA;EACE,OAAO,EAAE,SAAS;CACrB",
     "sources": [
         "../../yukinori.scss"
     ],
