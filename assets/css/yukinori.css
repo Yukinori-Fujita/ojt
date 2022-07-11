@@ -29,6 +29,11 @@ header li {
   right: 0px;
 }
 
+#kv p {
+  padding: 10px 0;
+  font-size: 25px;
+}
+
 footer {
   background-color: black;
   padding: 50px;
