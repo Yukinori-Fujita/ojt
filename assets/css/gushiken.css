@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .Latest-Articles {
+    width: 100%;
+  }
+}
+
 .Latest-Articles h1 {
   text-align: center;
   font-size: 30px;
@@ -13,6 +19,12 @@
   width: 1024px;
   margin: 0 auto;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .container-articles {
+    width: 100%;
+  }
 }
 
 .box-articles1 {
@@ -27,10 +39,22 @@
   width: 300px;
   height: 400px;
   margin-bottom: 40px;
+  position: relative;
 }
 
-.ariticles a {
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .ariticles {
+    margin: 0 auto;
+  }
+}
+
+.ariticles .underline {
+  position: absolute;
+  top: 90%;
+  right: 4%;
+  font-size: 13px;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
 }
 
 .ariticles:hover {

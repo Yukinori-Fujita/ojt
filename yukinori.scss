@@ -9,7 +9,7 @@
 header {
 
     @include sp-screen {
-        position: fixed;
+        position: absolute;
         overflow: hidden;
         width: 100%;
         top: 95px;
