@@ -36,4 +36,15 @@
 .ariticles:hover {
   box-shadow: 1px 1px 12px black;
 }
+
+p {
+  text-align: left;
+  padding: 8px 12px  0;
+  font-size: 15px;
+}
+
+time {
+  padding-left: 12px;
+  font-size: 15px;
+}
 /*# sourceMappingURL=gushiken.css.map */
