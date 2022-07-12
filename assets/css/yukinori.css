@@ -79,7 +79,7 @@ header li {
   display: flex;
   justify-content: center;
   position: relative;
-  left: 6%;
+  left: 5.5%;
 }
 
 @media screen and (max-width: 767px) {
