@@ -11,7 +11,7 @@
 
 .container-articles {
   // width: 1152px;
-  background-color: rgb(231, 161, 231);
+  // background-color: rgb(231, 161, 231);
   margin: 0 auto;
   // height: ;
 }
@@ -42,6 +42,10 @@
   width: 320px;
   height: 400px;
   margin-bottom: 40px;
+
+  a{
+    margin-right: auto;
+  }
 
   &:hover {
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 1);

@@ -10,7 +10,6 @@
 }
 
 .container-articles {
-  background-color: #e7a1e7;
   margin: 0 auto;
 }
 
@@ -26,6 +25,10 @@
   width: 320px;
   height: 400px;
   margin-bottom: 40px;
+}
+
+.ariticles a {
+  margin-right: auto;
 }
 
 .ariticles:hover {
