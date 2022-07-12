@@ -89,6 +89,12 @@ header {
             justify-content: center;
             left: 0;
         }
+
+        img{
+            @include sp-screen{
+                height: 280px;
+            }
+        }
     }
 
     #visual-text {

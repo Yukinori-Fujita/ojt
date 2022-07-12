@@ -9,7 +9,7 @@ $(function () {
         "autoplaySpeed": 3000,
         "fade": true,
         "variableWidth": true,
-        "adaptiveHeight	": true,
+        // "adaptiveHeight	": true,
         "arrows": false,
     });
 })

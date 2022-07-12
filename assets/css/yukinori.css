@@ -90,6 +90,12 @@ header li {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #kv #main-visual img {
+    height: 280px;
+  }
+}
+
 #kv #visual-text {
   position: absolute;
   top: 235px;
