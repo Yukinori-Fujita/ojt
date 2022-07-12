@@ -58,6 +58,7 @@ header li {
 #kv #logo {
   position: absolute;
   top: -115px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -77,6 +78,16 @@ header li {
 #kv #main-visual {
   display: flex;
   justify-content: center;
+  position: relative;
+  left: 6%;
+}
+
+@media screen and (max-width: 767px) {
+  #kv #main-visual {
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
 }
 
 #kv #visual-text {

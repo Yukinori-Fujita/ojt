@@ -63,6 +63,7 @@ header {
     #logo {
         position: absolute;
         top: -115px;
+        z-index: 1;
 
         @include sp-screen {
             position: static;
@@ -80,6 +81,14 @@ header {
     #main-visual {
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 6%;
+
+        @include sp-screen {
+            display: flex;
+            justify-content: center;
+            left: 0;
+        }
     }
 
     #visual-text {
