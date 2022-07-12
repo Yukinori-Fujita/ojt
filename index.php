@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="./assets/css/gushiken.css">
     <title>ojt</title>
 </head>
-
-
 <body>
 
     <header>
