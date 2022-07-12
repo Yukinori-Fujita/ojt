@@ -21,23 +21,27 @@
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
+  flex-wrap: wrap;
+  
   // padding-left: ;
   // padding-right: ;
 }
 
-.box-articles2 {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  // padding-left: ;
-  // padding-right: ;
-  padding-bottom: 40px;
-}
+// .box-articles2 {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 20px;
+//   // padding-left: ;
+//   // padding-right: ;
+//   padding-bottom: 40px;
+// }
 
 // hover-shadow
 .ariticles {
   transition: all .2s ease-in-out;
   width: 320px;
+  height: 400px;
+  margin-bottom: 40px;
 
   &:hover {
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 1);
