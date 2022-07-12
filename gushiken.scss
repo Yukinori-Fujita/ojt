@@ -1,0 +1,44 @@
+.Latest-Articles{
+max-width: 1152px;
+margin: 0 auto; 
+}
+.Latest-Articles h1{
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+}
+
+.container-articles{
+    width: 1152px;
+    background-color: rgb(231, 161, 231);
+    // height: ;
+}
+
+
+.box-articles1{
+    display: flex;
+    justify-content: space-around;
+    padding-top:40px;
+    // padding-left: ;
+    // padding-right: ;
+  } 
+
+  .box-articles2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    // padding-left: ;
+    // padding-right: ;
+    padding-bottom:40px;
+  } 
+
+  // hover-shadow
+  .ariticles{
+    transition: all .2s ease-in-out;
+    &:hover {
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 1);
+    width : 300px;
+    height: 380px;
+    
+   }
+}
