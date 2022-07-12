@@ -5,12 +5,13 @@
 
 .Latest-Articles h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .container-articles {
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .box-articles1 {
@@ -22,7 +23,7 @@
 
 .ariticles {
   transition: all .2s ease-in-out;
-  width: 320px;
+  width: 300px;
   height: 400px;
   margin-bottom: 40px;
 }
