@@ -32,6 +32,7 @@
 }
 
 
+
 .box-articles1 {
   display: flex;
   justify-content: space-between;
@@ -55,6 +56,7 @@
     margin: 0 auto;
   }
 
+
   .underline {
     position: absolute;
     top: 90%;
@@ -65,7 +67,20 @@
     // width: 20px;
   }
 
+
   &:hover {
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 1);
+  }
+
+
+  p {
+    text-align: left;
+    padding: 8px 12px 0;
+    font-size: 15px;
+  }
+
+  time {
+    padding-left: 12px;
+    font-size: 15px;
   }
 }
