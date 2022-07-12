@@ -1,3 +1,7 @@
+body {
+  font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  }
+
 /* ハンバーガーメニュー */
 @media screen and (max-width:767px){
     .hamburger {
