@@ -50,15 +50,26 @@
 
 .ariticles .underline {
   position: absolute;
-  top: 90%;
+  top: 88%;
   right: 4%;
   font-size: 13px;
+}
+
+.ariticles .underline .underline-more {
+  transition: 0.5s;
   border-bottom: solid 1px black;
   padding-bottom: 10px;
+  width: 20px;
+  position: absolute;
+  right: 0;
 }
 
 .ariticles:hover {
   box-shadow: 1px 1px 12px black;
+}
+
+.ariticles:hover .underline-more {
+  width: 80px;
 }
 
 .ariticles p {

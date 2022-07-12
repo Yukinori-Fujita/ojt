@@ -1,9 +1,11 @@
 $(function () {
+    // ハンバーガー
     $("#hamburger-btn").on("click", function () {
         $(this).toggleClass("on");
         $("ul").toggleClass("hide");
     })
 
+    // slick
     $("#main-visual").slick({
         "autoplay": true,
         "autoplaySpeed": 3000,
