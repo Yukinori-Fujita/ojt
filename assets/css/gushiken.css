@@ -10,8 +10,8 @@
 }
 
 .container-articles {
-  width: 1152px;
   background-color: #e7a1e7;
+  margin: 0 auto;
 }
 
 .box-articles1 {
@@ -29,11 +29,10 @@
 
 .ariticles {
   transition: all .2s ease-in-out;
+  width: 320px;
 }
 
 .ariticles:hover {
   box-shadow: 1px 1px 12px black;
-  width: 300px;
-  height: 380px;
 }
 /*# sourceMappingURL=gushiken.css.map */
