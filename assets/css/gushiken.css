@@ -10,13 +10,14 @@
 }
 
 .container-articles {
+  width: 1024px;
   margin: 0 auto;
   margin-bottom: 60px;
 }
 
 .box-articles1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 40px;
   flex-wrap: wrap;
 }

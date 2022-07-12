@@ -12,6 +12,8 @@
 }
 
 .container-articles {
+  width: 1024px;
+  // background-color: rgb(231, 161, 231);
   margin: 0 auto;
   margin-bottom: 60px;
 }
@@ -19,9 +21,12 @@
 
 .box-articles1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 40px;
   flex-wrap: wrap;
+  // align-items: center;
+  // padding-left: ;
+  // padding-right: ;
 }
 
 
