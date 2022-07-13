@@ -21,9 +21,10 @@
             <span></span>
         </p>
         <ul>
-            <li>Menu01</li>
+            <?php wp_nav_menu(); ?>
+            <!-- <li>Menu01</li>
             <li>Menu02</li>
             <li>Menu03</li>
-            <li>Menu04</li>
+            <li>Menu04</li> -->
         </ul>
     </header>
