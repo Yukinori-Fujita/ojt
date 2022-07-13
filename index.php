@@ -13,11 +13,15 @@
         </picture>
         <p>進化し続ける「街」<br class="br-sp">アメリカンビレッジマガジン</p>
     </section>
-
     <section class="Latest-Articles">
         <h1>Latest Article</h1>
         <div class="container-articles">
             <div class="box-articles1">
+            <?php 
+      if (have_posts()):
+        while(have_posts()):
+          the_post();
+        ?>
                 <div class="ariticles">
                     <!-- <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="カフェ"></a> -->
                     <?php the_post_thumbnail();?>
@@ -28,7 +32,13 @@
                         <div class="underline-more"></div>
                     </div>
                 </div>
-                <div class="ariticles">
+                <?php endwhile;
+    else: ?>
+    <section class="container-wrap" id="htmlcss">
+      <h2 class="subtitle">表示する記事がありません</h2>
+    </section>
+    <?php endif;?>
+                <!-- <div class="ariticles">
                     <img src="<?php echo get_template_directory_uri();?>/img/post_img_2.png" alt="観覧車"></a>
                     <time datetime="">2018/5/19</time>
                     <p>あのネオンはいつ交換するのか！？観覧者の謎に迫る！</p>
@@ -73,7 +83,7 @@
                         <div class="underline-more"></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 <?php get_footer();?>

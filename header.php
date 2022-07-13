@@ -10,8 +10,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/yukinori.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/gushiken.css">
+    <link rel="stylesheet" href="/wp-ojt/assets/css/yukinori.css">
+    <link rel="stylesheet" href="/wp-ojt/assets/css/gushiken.css">
     <title>ojt</title>
 </head>
 <body>
