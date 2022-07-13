@@ -18,26 +18,25 @@
         <div class="container-articles">
             <div class="box-articles1">
             <?php 
-      if (have_posts()):
-        while(have_posts()):
-          the_post();
-        ?>
+                if (have_posts()):
+                while(have_posts()):
+                the_post();?>
                 <div class="ariticles">
                     <!-- <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="カフェ"></a> -->
                     <?php the_post_thumbnail();?>
                     <time datetime=""><?php echo get_the_date(); ?></time>
                     <p><?php the_content(); ?></p>
                     <div class="underline">
-                        <a href="#">READ MORE</a>
+                        <a href="<?php the_permalink();?>">READ MORE</a>
                         <div class="underline-more"></div>
                     </div>
                 </div>
                 <?php endwhile;
-    else: ?>
-    <section class="container-wrap" id="htmlcss">
-      <h2 class="subtitle">表示する記事がありません</h2>
-    </section>
-    <?php endif;?>
+                else: ?>
+                <section class="container-wrap" id="htmlcss">
+                    <h2 class="subtitle">表示する記事がありません</h2>
+                </section>
+            <?php endif;?>
                 <!-- <div class="ariticles">
                     <img src="<?php echo get_template_directory_uri();?>/img/post_img_2.png" alt="観覧車"></a>
                     <time datetime="">2018/5/19</time>
