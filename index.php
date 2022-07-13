@@ -19,9 +19,10 @@
         <div class="container-articles">
             <div class="box-articles1">
                 <div class="ariticles">
-                    <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="カフェ"></a>
-                    <time datetime="">2018/5/20</time>
-                    <p>おしゃれカフェがありますよ</p>
+                    <!-- <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="カフェ"></a> -->
+                    <?php the_post_thumbnail();?>
+                    <time datetime=""><?php echo get_the_date(); ?></time>
+                    <p><?php the_content(); ?></p>
                     <div class="underline">
                         <a href="#">READ MORE</a>
                         <div class="underline-more"></div>
