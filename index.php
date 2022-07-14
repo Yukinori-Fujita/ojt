@@ -22,7 +22,6 @@
                 while(have_posts()):
                 the_post();?>
                 <div class="ariticles">
-                    <!-- <img src="<?php echo get_template_directory_uri();?>/img/post_img_1.png" alt="カフェ"></a> -->
                     <?php the_post_thumbnail();?>
                     <time datetime=""><?php echo get_the_date(); ?></time>
                     <p><?php the_content(); ?></p>
@@ -37,52 +36,16 @@
                     <h2 class="subtitle">表示する記事がありません</h2>
                 </section>
             <?php endif;?>
-                <!-- <div class="ariticles">
-                    <img src="<?php echo get_template_directory_uri();?>/img/post_img_2.png" alt="観覧車"></a>
-                    <time datetime="">2018/5/19</time>
-                    <p>あのネオンはいつ交換するのか！？観覧者の謎に迫る！</p>
-                    <div class="underline">
-                        <a href="#">READ MORE</a>
-                        <div class="underline-more"></div>
-                    </div>
-                </div>
-                <div class="ariticles">
-                    <img src="<?php echo get_template_directory_uri();?>/img/post_img_3.png" alt="社内"></a>
-                    <time datetime="">2018/5/18</time>
-                    <p>ラソナの社内はこんなのよ</p>
-                    <div class="underline">
-                        <a href="#">READ MORE</a>
-                        <div class="underline-more"></div>
-                    </div>
-                </div>
-                <div class="ariticles">
-                    <img src="<?php echo get_template_directory_uri();?>/img/post_img_4.png" alt="アラハビーチ"></a>
-                    <time datetime="">2018/5/17</time>
-                    <p>お隣のアラハはハワイ？</p>
-                    <div class="underline">
-                        <a href="#">READ MORE</a>
-                        <div class="underline-more"></div>
-                    </div>
-                </div>
-                <div class="ariticles">
-                    <img src="<?php echo get_template_directory_uri();?>/img/post_img_5.png" alt="テント"></a>
-                    <time datetime="">2018/5/16</time>
-                    <p>なぜテント？ラソナの人にきいてみた</p>
-                    <div class="underline">
-                        <a href="#">READ MORE</a>
-                        <div class="underline-more"></div>
-                    </div>
-                </div>
-                <div class="ariticles">
-                    <img src="<?php echo get_template_directory_uri();?>/img/post_img_6.png" alt="ベイエリア"></a>
-                    <time datetime="">2018/5/15</time>
-                    <p>ベイエリアおしゃれすぎる問題</p>
-                    <div class="underline">
-                        <a href="#">READ MORE</a>
-                        <div class="underline-more"></div>
-                    </div>
-                </div>
-            </div> -->
+            <!-- カスタム投稿全件数取得 -->
+            <?php global $wp_query; $count = $wp_query->found_posts;?>
+            <?php //echo $count?>
+            <!-- この部分がajaxで追加読み込みする箇所 -->
+            <!-- javascript側に渡したい値は、data属性を使って指定 -->
+            <div class="load" data-count="<?php echo $count; ?>" data-post-type="news" ></div>
+            <!-- 初期表示件数が全件数より少ない場合、もっと読み込むボタンを表示 -->
+            <?php if($count > 6): ?>
+            <button class="more_btn">もっと読み込む</button>
+            <?php endif; ?>
         </div>
     </section>
 <?php get_footer();?>
