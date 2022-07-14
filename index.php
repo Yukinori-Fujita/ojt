@@ -6,6 +6,14 @@
         <picture id="main-visual">
             <source media="(max-width: 767px)" srcset="img/visual_1_sp.png">
             <img src="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png" alt="">
+            <!-- <?php 
+                //if (have_posts()):
+                //while(have_posts()):
+                //the_post();?>
+            <?php //the_post_thumbnail();?>
+            <?php //endwhile;
+                //else: ?>
+            <?php //endif;?> -->
         </picture>
         <picture id="visual-text">
             <source media="(max-width: 767px)" srcset="img/visual_text_sp.png">
