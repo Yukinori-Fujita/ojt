@@ -5,10 +5,10 @@
         </picture>
         <picture id="main-visual">
             <source media="(max-width: 767px)" srcset="img/visual_1_sp.png">
-            <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width ?>" height="<?php echo get_custom_header()->height ?>">
+            <?php echo do_shortcode('[metaslider id="97"]'); ?>
         </picture>
         <picture id="visual-text">
-            <source media="(max-width: 767px)" srcset="img/visual_text_sp.png">
+            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_text_sp.png">
             <img src="<?php echo get_template_directory_uri();?>/img/visual_text_pc.png" alt="">
         </picture>
         <p>進化し続ける「街」<br class="br-sp">アメリカンビレッジマガジン</p>

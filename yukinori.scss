@@ -81,15 +81,20 @@ header {
     #main-visual {
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 5.5%;
+        width: 89%;
 
         @include sp-screen {
             display: flex;
             justify-content: center;
             left: 0;
+            width: 100%;
         }
 
         img{
             @include sp-screen{
+                width: 400px;
                 height: 280px;
             }
         }
