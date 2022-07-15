@@ -19,11 +19,5 @@
         <p id="hamburger-btn" class="js-hamburger hamburger">
             <span></span>
         </p>
-        <ul>
             <?php wp_nav_menu(); ?>
-            <!-- <li>Menu01</li>
-            <li>Menu02</li>
-            <li>Menu03</li>
-            <li>Menu04</li> -->
-        </ul>
     </header>

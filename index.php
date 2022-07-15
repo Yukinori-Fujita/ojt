@@ -4,7 +4,7 @@
             <img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="">
         </picture>
         <picture id="main-visual">
-            <source media="(max-width: 767px)" srcset="img/visual_1_sp.png">
+            <!-- <source media="(max-width: 767px)" srcset="img/visual_1_sp.png"> -->
             <?php echo do_shortcode('[metaslider id="97"]'); ?>
         </picture>
         <picture id="visual-text">
