@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/wp-ojt/assets/css/yukinori.css">
     <link rel="stylesheet" href="/wp-ojt/assets/css/gushiken.css">
     <title>ojt</title>
+
+    <?php wp_head();?>
 </head>
 <body>
 
