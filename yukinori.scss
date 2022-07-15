@@ -81,8 +81,6 @@ header {
     #main-visual {
         display: flex;
         justify-content: center;
-        position: relative;
-        left: 5.5%;
 
         @include sp-screen {
             display: flex;

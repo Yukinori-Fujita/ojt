@@ -6,14 +6,14 @@ $(function () {
     })
 
     // slick
-    $("#main-visual").slick({
-        "autoplay": true,
-        "autoplaySpeed": 3000,
-        "fade": true,
-        "variableWidth": true,
-        // "adaptiveHeight	": true,
-        "arrows": false,
-    });
+    // $("#main-visual").slick({
+    //     "autoplay": true,
+    //     "autoplaySpeed": 3000,
+    //     "fade": true,
+    //     "variableWidth": true,
+    //     // "adaptiveHeight	": true,
+    //     "arrows": false,
+    // });
 
     let now_post_num = 6; // 現在表示されている件数
     let get_post_num = 6;  // もっと読み込むボタンで取得する件数
