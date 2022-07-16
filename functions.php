@@ -25,5 +25,5 @@ add_action( 'wp_ajax_my_ajax_action', 'my_ajax' );
 add_action( 'wp_ajax_nopriv_my_ajax_action', 'my_ajax' );
 
 
-add_theme_support( 'custom-header' );
+add_theme_support( 'custom-header',);
 ?>
