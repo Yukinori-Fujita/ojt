@@ -5,6 +5,7 @@ $(function () {
         $("ul").toggleClass("hide");
     })
 
+<<<<<<< HEAD
     // slick
     $("#main-visual").slick({
         "autoplay": true,
@@ -19,6 +20,8 @@ $(function () {
         "arrows": false,
     });
 
+=======
+>>>>>>> 365627798bfd5c3e0cedf2dbd4bd8c475ccfccba
     let now_post_num = 6; // 現在表示されている件数
     let get_post_num = 6;  // もっと読み込むボタンで取得する件数
 
@@ -29,7 +32,7 @@ $(function () {
 
     //admin_ajaxにadmin-ajax.phpの絶対パス指定（相対パスは失敗する）
     let host_url = location.protocol + "//" + location.host;
-    let admin_ajax = host_url + '/wp-admin/admin-ajax.php';
+    let admin_ajax = host_url + '/wp-ojt/admin-ajax.php';
 
     $(document).on("click", ".more_btn", function () {
         //読み込み中はボタン非表示

@@ -4,11 +4,11 @@
             <img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="">
         </picture>
         <picture id="main-visual">
-            <source media="(max-width: 767px)" srcset="img/visual_1_sp.png">
-            <img src="<?php echo get_template_directory_uri();?>/img/visual_1_pc.png" alt="">
+            <!-- <source media="(max-width: 767px)" srcset="img/visual_1_sp.png"> -->
+            <?php echo do_shortcode('[metaslider id="97"]'); ?>
         </picture>
         <picture id="visual-text">
-            <source media="(max-width: 767px)" srcset="img/visual_text_sp.png">
+            <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_text_sp.png">
             <img src="<?php echo get_template_directory_uri();?>/img/visual_text_pc.png" alt="">
         </picture>
         <p>進化し続ける「街」<br class="br-sp">アメリカンビレッジマガジン</p>
@@ -30,13 +30,8 @@
                         <div class="underline-more"></div>
                     </div>
                 </div>
-                <?php endwhile;
-                else: ?>
-                <section class="container-wrap" id="htmlcss">
-                    <h2 class="subtitle">表示する記事がありません</h2>
-                </section>
-            <?php endif;?>
-            <!-- カスタム投稿全件数取得 -->
+                <?php endwhile;?>
+                <!-- カスタム投稿全件数取得 -->
             <?php global $wp_query; $count = $wp_query->found_posts;?>
             <?php //echo $count?>
             <!-- この部分がajaxで追加読み込みする箇所 -->
@@ -46,6 +41,7 @@
             <?php if($count > 6): ?>
             <button class="more_btn">もっと読み込む</button>
             <?php endif; ?>
+            <?php endif;?>
         </div>
     </section>
 <?php get_footer();?>
