@@ -48,9 +48,15 @@
 	    );
 	    $my_posts = get_posts($args);
 	    foreach ($my_posts as $post) : setup_postdata($post);
+        echo '<div class="ariticles">';
 	    echo the_post_thumbnail();
-	    echo '<time>'.get_the_date();
-	    echo '</time>';
+	    echo '<time>'.get_the_date().'</time>';
+        echo '<p>'.the_content().'</p>';
+        echo '<div class="underline">';
+        echo '<a href="'.get_the_permalink().'">'.'READ MORE'.'</a>';
+        echo '<div class="underline-more">'.'</div>';
+        echo '</div>';
+        echo '</div>';
 	    endforeach; wp_reset_postdata();
 	    wp_die();
     }

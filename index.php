@@ -48,7 +48,7 @@
 
                 <!-- 初期表示件数が全件数より少ない場合、もっと読み込むボタンを表示 -->
                 <?php if($count > 6): ?>
-                <button class="more_btn">もっと読み込む</button>
+                <button class="more_btn">もっと見る</button>
                 <?php endif; ?>
 
             <?php endif; wp_reset_postdata();?>
