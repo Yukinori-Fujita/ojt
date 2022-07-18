@@ -45,6 +45,11 @@
   }
 }
 
+// 読み込んだあとの表示場所
+.load{
+  @extend .box-articles1;
+}
+
 
 // hover-shadow
 .ariticles {
