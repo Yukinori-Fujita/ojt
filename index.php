@@ -39,17 +39,18 @@
                     </div>
                 </div>
                 <?php endwhile;?>
-                <!-- カスタム投稿全件数取得 -->
                 <?php global $wp_query; $count = $wp_query->found_posts;?>
-                <?php //echo $count;?>
-                <!-- この部分がajaxで追加読み込みする箇所 -->
+                <?php //echo $count?>
+                 <!-- この部分がajaxで追加読み込みする箇所 -->
                 <!-- javascript側に渡したい値は、data属性を使って指定 -->
                 <ul class="load" data-count="<?php echo $count; ?>"
-                data-post-type="news" ></ul>
+                    data-post-type="news" ></ul>
+
                 <!-- 初期表示件数が全件数より少ない場合、もっと読み込むボタンを表示 -->
                 <?php if($count > 6): ?>
                 <button class="more_btn">もっと読み込む</button>
                 <?php endif; ?>
+
             <?php endif; wp_reset_postdata();?>
         </div>
     </section>
