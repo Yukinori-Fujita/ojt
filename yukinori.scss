@@ -142,3 +142,9 @@ footer {
         font-size: 15px;
     }
 }
+
+.more_btn{
+    @include sp-screen{
+        margin: 0 auto;
+    }
+}
