@@ -40,10 +40,9 @@
   gap: 60px;
 
 
-  // @include sp-screen{
-  //   gap: 0px;
-  //   display: flex;
-  // }
+  @include sp-screen{
+    gap: 0px;
+  }
 }
 
 // 読み込んだあとの表示場所
