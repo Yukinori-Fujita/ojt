@@ -4,13 +4,8 @@
             <img src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="">
         </picture>
         <picture id="main-visual">
-
-            <!-- <source media="(max-width: 767px)" srcset="img/visual_1_sp.png"> -->
-            <?php //echo do_shortcode('[metaslider id="54"]'); ?>
-
             <!-- <source media="(max-width: 767px)" srcset=""> -->
             <?php echo do_shortcode('[metaslider title="PC Slideshow"]'); ?>
-
         </picture>
         <picture id="visual-text">
             <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri();?>/img/visual_text_sp.png">
