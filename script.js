@@ -39,7 +39,7 @@ $(function () {
             now_post_num = now_post_num + get_post_num; 
             //まだ全件表示されていない場合、ボタンを再度表示
             if(all_count > now_post_num) { 
-                load.after('<button class="more_btn">もっと読み込む</button>');
+                load.after('<button class="more_btn">もっと見る</button>');
             }
         })
         .fail(function(){
