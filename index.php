@@ -21,7 +21,6 @@
                 $wp_query = new WP_Query(
                     array(
                     'post_type' => 'news',
-                    // 'posts_per_page' => 3,
                 )
             );
         ?>
