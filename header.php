@@ -20,16 +20,6 @@
             <span></span>
         </p>
             <?php wp_nav_menu(); ?>
-<<<<<<< HEAD
-            <!-- <li>Menu01</li>
-            <li>Menu02</li>
-            <li>Menu03</li>
-            <li>Menu04</li> -->
-        </ul>
     </header>
 
 
-    
-=======
-    </header>
->>>>>>> 365627798bfd5c3e0cedf2dbd4bd8c475ccfccba

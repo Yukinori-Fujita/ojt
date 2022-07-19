@@ -11,16 +11,13 @@
 		}
 		return $query;
 	}
-<<<<<<< HEAD
-	return $query;
-}
 
 add_action( 'wp_ajax_my_ajax_action', 'my_ajax' );
 add_action( 'wp_ajax_nopriv_my_ajax_action', 'my_ajax' );
 
 
 add_theme_support( 'custom-header',);
-=======
+
 	add_action( 'pre_get_posts', 'my_custom_query_vars' );
 	
 	/* ajax処理 */
@@ -43,5 +40,5 @@ add_theme_support( 'custom-header',);
 	}
 	add_action( 'wp_ajax_my_ajax_action', 'my_ajax' );
 	add_action( 'wp_ajax_nopriv_my_ajax_action', 'my_ajax' );
->>>>>>> 365627798bfd5c3e0cedf2dbd4bd8c475ccfccba
+
 ?>
