@@ -8,8 +8,8 @@
             <!-- <source media="(max-width: 767px)" srcset="img/visual_1_sp.png"> -->
             <?php //echo do_shortcode('[metaslider id="54"]'); ?>
 
-            <!-- <source media="(max-width: 767px)" srcset="<?php?>"> -->
-            <?php echo do_shortcode('[metaslider id="97"]'); ?>
+            <!-- <source media="(max-width: 767px)" srcset=""> -->
+            <?php echo do_shortcode('[metaslider title="PC Slideshow"]'); ?>
 
         </picture>
         <picture id="visual-text">
@@ -47,8 +47,8 @@
                 <?php //echo $count?>
                  <!-- この部分がajaxで追加読み込みする箇所 -->
                 <!-- javascript側に渡したい値は、data属性を使って指定 -->
-                <ul class="load" data-count="<?php echo $count; ?>"
-                    data-post-type="news" ></ul>
+                <div class="load" data-count="<?php echo $count; ?>"
+                    data-post-type="news" ></div>
 
             <?php endif; wp_reset_postdata();?>
         </div>
