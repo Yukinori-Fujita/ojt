@@ -6,10 +6,10 @@
         <picture id="main-visual">
 
             <!-- <source media="(max-width: 767px)" srcset="img/visual_1_sp.png"> -->
-            <?php //echo do_shortcode('[metaslider id="54"]'); ?>
+            <?php echo do_shortcode('[metaslider id="54"]'); ?>
 
             <!-- <source media="(max-width: 767px)" srcset="<?php?>"> -->
-            <?php echo do_shortcode('[metaslider id="97"]'); ?>
+            <?php //echo do_shortcode('[metaslider id="97"]'); ?>
 
         </picture>
         <picture id="visual-text">
