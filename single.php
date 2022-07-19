@@ -8,8 +8,5 @@
                     <p><?php the_content(); ?></p>
                 <?php endwhile;
                 else: ?>
-                <section class="container-wrap" id="htmlcss">
-                    <h2 class="subtitle">表示する記事がありません</h2>
-                </section>
         <?php endif;?>
         <?php get_footer();?>
